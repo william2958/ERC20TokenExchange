@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-rsync -r app/ docs/
-rsync build/contracts/Exchange.json docs/
-rsync build/contracts/FixedSupplyToken.json docs/
+rsync -r build/ docs/
 git add .
 git commit -m "Adding frontend files to Github Pages"
 git push
